@@ -40,7 +40,7 @@ func bin_to_text():
 			var filename = dir.get_next()
 			while (filename != ""):
 				if (!dir.current_is_dir() and filename.split(".")[-1] == "scn"):
-					var scene = load([dir.get_current_dir() + "/" + filename])
+					var scene = load(dir.get_current_dir() + "/" + filename)
 					ResourceSaver.save(scene, dir.get_current_dir() + "/" + filename.left(filename.length() - 4) + ".tscn")
 					print("saved '%s.tscn'" % (dir.get_current_dir() + "/" + filename.left(filename.length() - 4)))
 					if (!keep_originals):
