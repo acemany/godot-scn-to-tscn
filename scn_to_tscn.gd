@@ -92,7 +92,7 @@ func check_errors():
 				if dir.current_is_dir() and filename not in [".godot", ".git", "addons", "android", "..", "."]:
 					directories.append(dir.get_current_dir() + "/" + filename)
 				elif filename.split(".", true, 1)[-1] in ["gd", "scn", "tscn", "res", "tres"]:
-					print("Attempt to open: '%s'" % (dir.get_current_dir() + ("" if dir.get_current_dir() == "res://" else "/") + filename))
+					print("Checking: '%s'" % (dir.get_current_dir() + ("" if dir.get_current_dir() == "res://" else "/") + filename))
 					tmp_ = load(dir.get_current_dir() + ("" if dir.get_current_dir() == "res://" else "/") + filename)
 				filename = dir.get_next()
 		dir.list_dir_end()
