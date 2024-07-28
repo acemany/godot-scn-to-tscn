@@ -4,4 +4,4 @@ A small script to batch convert .scn files to .tscn, .scn files to .tscn and che
 
 ## Usage
 
-Add this script and scene to your project's root directory. In scene you can find settings.
+Open script in godot, set operation and press Ctrl + Shift + X
