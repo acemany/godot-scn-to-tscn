@@ -1,6 +1,5 @@
 @tool
 
-class_name SceneChecker
 extends EditorScript
 
 
